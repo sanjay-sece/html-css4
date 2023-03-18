@@ -1,0 +1,424 @@
+CSS (Cascading Style Sheets):
+        -> CSS is something which is used to style websites or style HTML.
+        -> Cascading means anything that you apply to an upper element goes down to any lower elements or any elements that are inside other elements.
+        -> So anything that you apply to the body element will cascade or get be inherited to all the  other elements on the page.
+        
+Inline Styles:
+        -> Inline styles are where we style something right on the element that we want to effect.
+        -> <p style="color:any color we want;">   ->changes the colour of text of that paragraph
+        -> Eg: <p style="colour: blue;">some text</p>.
+
+Styling classes :
+                -> <h2 class="red-text"> : using style class
+                -> <style>       : creating style class
+                    .red-text{
+                      color:red;
+                    }
+                   </style>
+                -> Classes are reusable styles that can be added to HTML elements
+                ->  So to show that you're styling  a class, you would put a dot in front of it.
+             
+Selectors to Style elements:
+        -> <style></style> : Style block
+        -> <style>
+               p {color:red;}
+           </style>
+->This code changes the color of text present inside a paragraph tag
+
+Style Multiple Element with a CSS class:
+                -> The same CSS styles on multiple HTML elements
+                -> <h2 class="red-text"> : using style class
+                -> <p class="red-text">   : another usage of style class
+                -> <style>       : creating style class
+                    .red-text{
+                      color:red;
+                    }
+                   </style>
+
+Change the Font Size of an Element:
+                Eg: -> <style>       : creating style class
+                         .red-text{
+                           color:red;
+                           font-size: 30px;   : Changes the font size
+                         }
+                       </style>
+                    -> <style>
+                        p{      : another example
+                          font-size:16px;
+                        }
+                       </style>
+                      
+Set the FOnt Family of an Element:
+                -> It can set which font in element should use by  using the font family property.
+                -> Eg: -> <style>
+                            p{      
+                              font-size:16px;
+                              font-family: monospace;
+                            }
+                          </style>
+
+Import a Google Font:
+        -> We can import fonts from different websites, a free library of web fonts that we can use is Google fonts , they have a lot of great fonts.
+        -> <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> : This code comes directly from the Google Fonts website.
+        
+Specify How fonts should degrade:
+                -> This are the some default fonts available in all browsers, like monospace, serif and sans serif.
+                -> when one font isn't available, we can tell the browser to degrade or default to another font.
+                -> Eg: -> <style>
+                            p{      
+                              font-size:16px;
+                              font-family: Lobster,monospace;   : degrade or default to another font when if one is not available , it will go to the next font.
+                            }
+                          </style>
+                        
+Size your Images:
+        -> Css has a property called width that controls an element width.This can apply to almost any type of element, like an image or a div, or paragraph.
+        -> Eg: -> <style>
+                    .large-image{
+                       width: 500px;      : increases the size of the iamge 
+                    }
+                  </style>
+                  <a href="#"><img class="large-image"></a>
+               -> <style>
+                    .large-image{
+                       width: 100px;      : decreases the size of the iamge 
+                    }
+                  </style>
+                  <a href="#"><img class="smaller-image"></a>
+
+Add Borders around your Elements:
+              -> Css borders have properties like style, color and width.
+              -> Eg: -> h2{
+                          font-family: Lobster,monospace;
+                          border-color: red;
+                          border-width: 5px;
+                          boder-style: solid;
+                        }
+                     -> <style>    : creating class
+                                .thick-green-border{
+                                        border-color: green;
+                                        border-width: 10px;
+                                        boder-style: solid;
+                                }
+                        </style>
+                        <a href="#"><img class="smaller-image thick-green-broder"></a>
+
+Add Rounded Corners with border-radius:
+                -> Border radius property can used to make that a little rounded corners in borders
+                -> Eg: -> <style>    : creating class
+                                .thick-green-border{
+                                        border-color: green;
+                                        border-width: 10px;
+                                        boder-style: solid;
+                                        border-radius: 10px;   little curved corners
+                                        (or)
+                                        border-radius: 50%;   : makes a circle
+                                }
+                          </style>
+                          <a href="#"><img class="smaller-image thick-green-broder"></a>
+
+Give a Background Colour to a div Element:
+                -> The element background color can be set, with a property called background color.
+                -> Eg: -> <style>
+                            p{     
+                              font-family: Lobster,monospace;
+                              background-color: blue;
+                            }
+                          </style>
+                       -> <style>
+                                .silver-background{
+                                        background-color: silver;
+                                }
+                          </style>
+                          <div class="silver-background">
+
+Set the id of an Element:
+                -> We can also style based on ID and id is similar to a class except each element is only going to have one ID classes.
+                -> Eg: <form id="cat-photo-form" action="/submit-cat-photo">  : applying an ID to an element
+
+Use an id Attribute to style an Element:
+                -> Id have higher priority than classes.
+                -> And should only have one ID per element
+                -> Eg: -> <style>
+                                #heading{
+                                        colour: green;
+                                }
+                          </style> 
+                          <h2 class="red-text" id="heading">CatPhotoApp</h2>
+
+Adjust the Padding of an Element:
+                -> There are three properties that control the space around each element, which is padding margin and border.
+                -> Padding: The padding is the space around the text.
+                -> Margin: The margin is the space outside of the border that surrounds the padding
+                -> Padding is adjusted using padding keyword
+
+Adjust the Margin of an Element:
+         -> Elements merging controls the amount of space between an elements border and the surrounding elements    
+         -> Eg: margin: 20px;
+         
+Add a Negative Margin to an Element:
+         -> Setting negative value to margin keyword make the margin big because it has negative margin       
+         -> Eg: margin: -15px;
+
+Add Different Padding to Each Side of an Element:
+                -> we're going to use different paddings for the different sides using, top padding, right padding, bottom padding, left paadding.
+                -> Eg: Different padding:
+                         padding-top: 40px;
+                         padding-right: 20px;
+                         padding-bottom: 20px;
+                         padding-left: 40px;
+                      
+Add Different Margins to Each Side of an Element:
+                -> we're going to use different margin on each side, we have margin top, margin right, margin bottom, margin left. 
+                -> Eg: Different margin:
+                         margin-top: 40px;
+                         margin-right: 20px;
+                         margin-bottom: 20px;
+                         margin-left: 40px;
+                  
+Use Clockwise Notation to Specify the Padding:
+                -> Eg: padding: 20px 40px 20px 40px;   : These four numbers are which the first number is the top, then the right, then the bottom, then the left.
+                
+Use Clockwise Notation to Specify the Margin of an Element:
+                -> Eg: margin: 20px 40px 20px 40px;    : There's four numbers. The first is the top, right, bottom, and then left.
+                
+Use Attribute Selectors to Style Element:
+                -> Eg: -> [type='radio']{    : Here attribute is type and value is radio
+                                margin: 20px;
+                          }
+                       -> [type='checkbox']{
+                                margin: 10px 0px 15px 0px;
+                          }
+                
+Understand Absolute versus Relative Units:
+                -> Like px or pixels, these are absolute types of  length.
+                -> Absolute types of length like include, in  - inches, mm - millimeters, px - pixel, these are all tied to physical units of length.
+                -> Relative units of length like em and rem. And these are relative to another link value.
+                -> em - Relative to the font-size of the element.
+                -> rem - Relative to font-size of the root element.
+                -> Eg: .red-box{
+                             padding: 1.5em;
+                       }
+                
+Style the HTML Body Elements:
+                -> Every HTML page has a body element.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                           }
+                       </style>
+                -> This turns the whole page black.
+                
+ Inherit Styles from the Body Element:
+                -> So anything that you apply to the body element will cascade or get be inherited to all the  other elements on the page
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                       </style>
+                       <h1>Hello World</h1>
+                       -> we have green monospace font applied to h1 tag.
+                
+Prioritize One Style Over Anothe:
+                ->  The way style works is it uses whichever one is more specific or mentioned.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                           .pink-text{
+                                colour: pink;
+                           }
+                       </style>
+                       <h1 class="pink-text">Hello World</h1>
+                       -> We have pink monospace font applied to h1 tag.
+                
+Override Styles in Subsequent CSS:
+                -> The order that does matter is the order that the styles declared in.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                           .pink-text{
+                                colour: pink;
+                           }
+                           .blue-text{
+                                colour: blue;
+                           }
+                       </style>
+                       <h1 class="pink-text blue-text">Hello World</h1>
+                       -> We have blue monospace font applied to h1 tag due to the order on which the styles are declared in.
+                
+Override Class Declarations by Styling ID Attributes:
+                      -> IDs are even more specific.
+                      -> Eg: <style>
+                                body{
+                                    background-colour: black;
+                                    colour: green;
+                                    font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink;
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                              </style>
+                              <h1 id="orange-text" class="pink-text blue-text">Hello World</h1>
+                              -> We have orange monospace font applied to h1 tag, Because IDs are specific.
+                
+Override Class Declarations with Inline Styles:
+                        -> Inline styles are going to be more specific than all these other ways of styling text.
+                        -> Eg: <style>
+                                body{
+                                        background-colour: black;
+                                        colour: green;
+                                        font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink;
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                               </style>
+                               <h1 id="orange-text" class="pink-text blue-text" style="colour: white">Hello World</h1>                
+                               -> We have white monospace font applied to h1 tag because inline style are more specific.
+                               
+Override All Other Styles by using Important:
+                   -> Eg: <style>
+                                body{
+                                        background-colour: black;
+                                        colour: green;
+                                        font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink !important;  : specifing it is the most important style.
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                               </style>
+                               <h1 id="orange-text" class="pink-text blue-text" style="colour: white">Hello World</h1>     
+                               -> We have pink monospace font applied to h1 tag due to specifing it as the most important.
+                
+Use Hex Code for Specific Colour:
+                -> Hex codes are six hexadecimal digits that represent colors.
+                -> The hexadecimal for black, which is just 000000. So the first two zeros are the red, nthe second two zeros are the green and the third, two zeros are blue.
+                -> Eg: <style>
+                          body{
+                                background-color: #000000;
+                          }
+                       </style>
+
+Use Hex code to Mix Colors:
+                -> Hex codes can be used to create over 16 million different colors.
+                -> Eg: <style>
+                          .red-text{
+                                color: #FF0000;
+                          }
+                          .green-text{
+                                color: #00FF00;
+                          }
+                          .dodger-blue-text{
+                                color: #1E90FF;
+                          }
+                          .orange-text{
+                                color: #FFA500;
+                          }
+                       </style>
+
+Use Abbreviated Hex Code:
+              -> Hex codes can be shortened.
+              -> Eg: <style>
+                          .red-text{
+                                color: #F00;
+                          }
+                          .fuchsia-text{
+                                color: #F0F;
+                          }
+                          .cyan-text{
+                                color: #0FF;
+                          }
+                          .green-text{
+                                color: #0F0;
+                          }
+                       </style>
+
+Use RGB values to Color Elements:
+                -> We can also represent colors using RGB values.
+                -> Eg: <style>
+                          body{
+                                background-color: rgb(255, 255, 255);  :  for white color
+                                background-color: rgb(0, 0, 0);  :  for black color
+                          }
+                       </style>
+
+Use RGB to Mix Colors:
+                 -> Eg: <style>
+                          .red-text{
+                                color: rgb(255, 0, 0);
+                          }
+                          .orchid-text{
+                                color: rgb(218, 112, 214);
+                          }
+                          .sienna-text{
+                                color: rgb(160, 82, 45);
+                          }
+                          .blue-text{
+                                color: rgb(0, 0, 225);
+                          }
+                       </style>
+
+CSS Grid:
+     -> We can turn any HTML element into a grid container by setting its display property to grid.
+     -> Eg: -> display : grid;   : This will give us the ability to use the other  properties associated with CSS Grid
+            -> grid-template-columns: 100px 100px 100px;  : This add columns 
+            -> grid-template-rows: 50px 50px;   : This add rows 
+            -> grip-template-columns: auto 50px 10% 2fr 1fr;   : This are used to change the size of columns and rows
+            -> fr  : This sets the column or row to a fraction of the available space and it changes as the website size changes and get addjusted.
+            -> auto : That sets the column to the size of the space
+            -> grid-column-gap : 20px;  : This creates a column gap.
+            -> grid-row-gap : 20px;  : This creates a row gap
+            -> grid-gap: 10px 20px;   : Adds gaps between both column and row. The first number is going to be 10 pixels for the rows and the second numbers can be 20 pixels for the columns.
+            -> grid-column: 2 / 4;   : Using grid-column to control spacing
+            -> grid-row: 2 / 4;   : Using grid-row to control spacing.
+            -> In CSS Grid, each box is considered a cell.
+            -> We use justify self, we can justify and align the content within the cells.
+            -> By default, the property has a value of stretch, which will make the content filled the whole width of the cell.
+            -> Justify-self: center;   : This align an item horizontally and sets it to center within the cell. we can also do start or end
+            -> align-self: end;   : This aligns vertically to the bottom of the cell.
+            -> justify-items: center;   : This align all items horizontally and everything has been set to center.
+            -> align-items: end;   : This align all items vertically and everything has been set to end of each cell.
+            -> grid-template-area:       : This divides the grid into an area template.
+                "header header header"
+                "advert content content"
+                "footer footer footer" ;
+            -> grid-area: header;   : This helps to places the items in grid areas.
+               (This fills up the entire header or the space where it is present in the grid)
+            -> grid-area: 1/1/2/4;   : This helps to use grid-area without creating an area template and in this the grid takes the top row fully.
+               (it's almost like setting coordinates on a graph. The first two numbers are the start coordinate  And the last two numbers are the end coordinate)
+            -> grid-template-column: repeat(3, 1fr);   :This reduces repetition using repeat function 
+            -> Min max function takes two arguments.   
+            -> We can also set the size of a row or column using the min max function   
+            -> grid-template-column: repeat(3, minmax(90px, 1fr));   :This limits item size using the min-max function  
+            -> The first number is the smallest size that the row or column can be. And then the second number is the largest size a row or column can be.   
+            -> grid-template-column: repeat(auto-fill, minmax(90px, 1fr));   : This creates flexible layouts using auto-fill  
+            -> We use autofill, to automatically insert as many rows or columns of our desired size as possible, depending on the size of the container.   
+            -> grid-template-column: repeat(auto-fit, minmax(90px, 1fr));   : This creates flexible layouts using auto-fit   
+            -> The auto fit, always make sure that they fit the entire length of the container.    
+            
