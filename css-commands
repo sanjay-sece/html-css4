@@ -1,0 +1,25 @@
+CSS (Cascading Style Sheets) commands are used to style and layout web pages. Here are some common CSS commands:
+
+Selector: Selects the HTML element that you want to apply a style to. For example, h1 selects all <h1> elements.
+
+Property: Specifies the style to apply to the selected element. For example, color sets the color of the text.
+
+Value: Specifies the value for the selected property. For example, color: blue; sets the color of the text to blue.
+
+Here are some common CSS commands:
+
+color: Sets the color of the text.
+background-color: Sets the background color of an element.
+font-size: Sets the size of the font.
+font-family: Sets the font family to use.
+text-align: Sets the alignment of the text.
+border: Sets the border of an element.
+padding: Sets the padding of an element.
+margin: Sets the margin of an element.
+display: Sets how an element is displayed.
+position: Sets the position of an element.
+float: Sets the horizontal alignment of an element.
+clear: Clears the float on an element.
+opacity: Sets the opacity of an element.
+z-index: Sets the stacking order of an element.
+transition: Sets the transition effect on an element.
