@@ -7,10 +7,11 @@ Inline Styles:
         -> Inline styles are where we style something right on the element that we want to effect.
         -> <p style="color:any color we want;">   ->changes the colour of text of that paragraph
         -> Eg: <p style="colour: blue;">some text</p>.
+        
 
 Styling classes :
                 -> <h2 class="red-text"> : using style class
-                -> <style>       : creating style class
+                -> <style>    : creating style class
                     .red-text{
                       color:red;
                     }
